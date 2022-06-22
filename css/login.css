@@ -1,0 +1,277 @@
+/* Start Global Rule  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    --border-color:#dbdbdb;
+    --background-color:#fafafa;
+    --font-color:#8e8e8e;
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #fafafa;
+}
+
+
+/* Small Screen */
+
+@media(max-width:767px)
+{
+    .container{
+        width: 750px;
+    }
+}
+
+/* Medium Screen */
+
+@media(min-width:992px){
+    .container{
+        width: 950px;
+    }
+}
+
+
+/* Large Screen */
+
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+.container{
+    width: 970px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+@media (max-width:767px){
+    .container{
+        width: 100%;
+    }
+}
+
+/* End Global Rule  */
+
+
+/* Start Form */
+
+
+.main{
+    margin: 30px 0;
+}
+
+.main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .form{
+    width: 360px;
+    max-width: 100%;
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+
+.main .form .logo img{
+    width: 190px;
+}
+
+.main .form .logo{
+    margin-bottom: 30px;
+}
+.main .container form input[type='text']{
+
+background-color: #fafafa;
+margin-bottom: 6px;
+border-radius: 3px;
+padding:10px  ;
+display: block;
+width: 280px;
+color: #8e8e8e;
+border: 1px solid #dbdbdb;
+}
+
+.main .container form input[type='text']::placeholder{
+    font-size: 12px;
+}
+
+.main .container form input[type='text']:focus{
+    outline: 0;
+}
+
+.main .container form input[type="submit"]{
+    border: none;
+    color: white;
+    background: #0095f6;
+    font-weight: bold;
+    width: 100%;
+    padding: 8px ;
+    border-radius: 3px;
+    margin: 8px 0 ;
+}
+
+.main .container form p {
+    color: var(--font-color); 
+    margin: 10px 0;
+    margin-bottom: 22px;
+    font-size: 13px;
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main .container form p::after{
+    content: '';
+    width: 120px;
+    height: 1px ;
+    background-color: var(--border-color);
+    position: absolute;
+    bottom: 50%;
+    transform: translateX(50%);
+
+    left: -64px;
+}
+
+.main .container form p::before{
+    content: '';
+    width: 120px;
+    height: 1px ;
+    background-color: var(--border-color);
+    position: absolute;
+    bottom: 50%;
+    transform: translateX(50%);
+
+    right: 64px;
+}
+.main .container form a{
+    display: block;
+    text-decoration: none;
+}
+
+.main .container form .face{
+
+    color: #385185;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.main .container  .logo p{
+    color: var(--font-color);
+    font-size: 50px;
+    margin-top: 400px;
+    font-weight: bold;
+}
+
+.main .container form .face .fa-facebook-square{
+    margin-right: 10px;
+}
+
+.main .container form .forget{
+    color: #385185;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.main .sign{
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;background-color: white;
+    padding: 25px;
+    margin-top: 13px;
+    border: 1px solid var(--border-color);
+}
+
+.main .sign a{
+    text-decoration: none;
+    color:#0095f6 ;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.main .app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.main  .app{
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.main .app .image{
+    margin-top: 24px;
+}
+
+
+.main .app .image img {
+width: 140px;
+margin-right: 20px;
+cursor: pointer;
+}
+
+
+
+/* End Form */
+
+/* Start Footer */
+
+.footer{
+    margin-top: 17px;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #8e8e8e;
+    font-size: 12px;
+    padding: 0 30px;
+
+}
+.footer .container p{
+    cursor: pointer;
+}
+/* End Footer */
+
+/* Start CopyRight */
+
+.copyright{
+    padding: 15px 0 50px;
+}
+.copyright .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.copyright .container p{
+    font-size: 12px;
+    margin-right:12px;
+    color:#8e8e8e ;
+}
+/* End CopyRight */
