@@ -27,6 +27,9 @@ body{
     .container{
         width: 750px;
     }
+    nav{
+        position:relative;
+    }
 }
 
 /* Medium Screen */
