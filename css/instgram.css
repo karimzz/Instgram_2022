@@ -410,7 +410,7 @@ grid-template-columns: repeat(auto-fill , minmax(290px , 1fr));
 
 @media(max-width:767px){
     .container .box{
-        width:130px ;
+        width:126px ;
         margin-right: 8px;
         margin-bottom: 3px;
     }
