@@ -7,6 +7,14 @@ elements.forEach((el)=>{
         e.target.classList.toggle("following" );
         e.target.innerHTML = "Following" ; 
         e.target.style.cssText = "color : black ; transiton : .4s" ; 
+        if(! e.target.classList.contains("following")) {
+            e.target.innerHTML = "Follow" ; 
+            e.target.style.cssText = `text-decoration: none;
+            color: #0095f6;
+            font-weight: 700;
+            font-size: 13px;`
+             
+        }
     })
 })
 
